@@ -1,38 +1,53 @@
 # TaxHelper Android App
 
 A native Android wrapper for TaxHelper accounting software.
-Connects to your TaxHelper server (cloud or local network).
 
-## How it works
+## 📲 How to get the APK (no coding needed)
 
-The app is a WebView wrapper that loads TaxHelper.
-Two modes:
+### Option 1: GitHub Actions (easiest)
 
-1. **☁️ Cloud Mode** — connects to your Render cloud URL (works anywhere)
-2. **🏠 Local Mode** — connects to your PC/Mac on the same Wi-Fi
+1. Push this project to a **public GitHub repository**
+2. Go to your repo → **Actions** tab
+3. The workflow auto-starts — wait ~3 minutes
+4. When done, click the workflow run → **Artifacts** section
+5. Download **TaxHelper-Android-APK.zip**
+6. Extract the APK file inside
+7. Transfer it to your Android phone (email, USB, Google Drive, etc.)
+8. Open the APK on your phone → tap **Install**
+9. You may need to enable "Install from unknown sources" in Settings
 
-## Build Instructions
+### Option 2: Online APK Builder (even easier)
+
+Use an online service that wraps websites into APKs:
+
+**PWABuilder** (Microsoft, free):
+1. Go to https://pwabuilder.com
+2. Enter your TaxHelper cloud URL (e.g. `https://taxhelper.onrender.com`)
+3. Click **Start**
+4. Click **Package for Stores** → **Android**
+5. Download the APK
+
+**AppMaker online:**
+- Search "PWA to APK online" for alternatives
+
+## ⚙️ What the app does
+
+- First launch: asks for your TaxHelper server URL
+- Enter your cloud URL (`https://taxhelper.onrender.com`) or local network address
+- The app loads TaxHelper full-screen
+- Pull down to refresh, back button navigates pages
+- Works on any Android phone or tablet (Android 7+)
+
+## 🔧 Build from source (for developers)
 
 ### Prerequisites
-- Android Studio (latest)
+- Android Studio
 - JDK 17+
-- An Android device or emulator (API 24+)
 
 ### Build
 ```bash
+git clone https://github.com/YOUR_USER/taxhelper-android.git
 cd taxhelper-android
 ./gradlew assembleDebug
 ```
-APK will be at `app/build/outputs/apk/debug/app-debug.apk`
-
-### Release build
-```bash
-./gradlew assembleRelease
-```
-
-## First Run
-1. Install the APK on your Android device
-2. Open the app
-3. Enter your TaxHelper server URL on the settings screen
-4. Tap Connect
-5. Log in with your TaxHelper credentials
+APK at: `app/build/outputs/apk/debug/app-debug.apk`
