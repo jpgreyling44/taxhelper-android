@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TaxHelper" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1f6feb</item>
+        <item name="colorPrimaryDark">#0f1117</item>
+        <item name="colorAccent">#58a6ff</item>
+        <item name="android:colorBackground">#0f1117</item>
+        <item name="android:statusBarColor">#0f1117</item>
+        <item name="android:navigationBarColor">#0f1117</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <color name="background">#0f1117</color>
+    <color name="surface">#161b22</color>
+    <color name="primary">#1f6feb</color>
+    <color name="onPrimary">#ffffff</color>
+    <color name="textPrimary">#e1e4e8</color>
+    <color name="textSecondary">#8b949e</color>
+</resources>

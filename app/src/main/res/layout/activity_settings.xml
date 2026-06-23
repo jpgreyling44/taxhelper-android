@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0f1117"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Server Settings"
+        android:textColor="#f0f6fc"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your TaxHelper server URL"
+        android:textColor="#8b949e"
+        android:textSize="14sp"
+        android:paddingBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☁️ Cloud URL"
+        android:textColor="#8b949e"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textUri"
+        android:hint="https://taxhelper.onrender.com"
+        android:background="#161b22"
+        android:textColor="#e1e4e8"
+        android:textColorHint="#484f58"
+        android:padding="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="💾 Save & Connect"
+        android:backgroundTint="#1f6feb"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n💡 Tips:\n• Cloud: https://your-app.onrender.com\n• Local: http://192.168.x.x:8010\n• Both devices need same Wi-Fi for local"
+        android:textColor="#484f58"
+        android:textSize="12sp"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
