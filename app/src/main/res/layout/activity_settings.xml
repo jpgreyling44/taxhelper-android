@@ -47,7 +47,7 @@
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="💾 Save & Connect"
+        android:text="💾 Save &amp; Connect"
         android:backgroundTint="#1f6feb"
         android:textColor="#ffffff" />
 
